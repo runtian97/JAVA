@@ -128,6 +128,10 @@ japanlebron
  */
 ```
 
+### Small tips to trim your code
+**1.Select code and press "tab" key, move code to the right**
+
+**2.Select code and press "tab" + "shift" keys, move the code to the left**
 
 
 
