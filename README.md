@@ -32,4 +32,23 @@ china
 japan
 lebron
 ```
+**to output \: one \ for one \, two \ for two \**
+
+**one \**
+
+input:
+```
+
+```
+output:
+```
+
+```
+
+
+
+
+
+
+
 
