@@ -1,7 +1,7 @@
 # JAVA
 ## 08/23/22 
 ### JAVA Escape Character:
-**1. \t: Insert a tab in the text at this point.**
+**1. \t: Insert a tab in the text at this point.(you can add more than one \t to make them aligned)**
 
 input: 
 ```
@@ -100,7 +100,7 @@ input:
 ```
 public class class082222 {
     public static void main(String[] args){
-        System.out.println("china\r\njapanlebron");
+        System.out.println("china\r\njapanlebron"); 
     }
 }
 ```
@@ -110,7 +110,10 @@ china
 japanlebron
 ```
 
+### Comment
+**1. single line comment symbol: //**
 
+**2. multiple line comment symbol: /* comment */**
 
 
 
