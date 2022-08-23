@@ -89,10 +89,39 @@ public class class082222 {
     }
 }
 ```
-output:// clearly
+output:clearly, "china" is replaced by japanlebron. 
 ```
 japanlebron
 ```
+
+**to solve it, add one \n after \r so it goes to the second line**
+
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        System.out.println("china\r\njapanlebron");
+    }
+}
+```
+output: 
+```
+china
+japanlebron
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
