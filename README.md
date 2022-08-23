@@ -111,10 +111,15 @@ japanlebron
 ```
 
 ### Comment
-**1. single line comment symbol: //**
+**1. single line comment:**
+```
+//comment
+```
 
-**2. multiple line comment symbol: /* comment */**
-
+**2. multiple line comment:(nested multiple line comment is not allowed)**
+```
+/* comment */
+```
 
 
 
