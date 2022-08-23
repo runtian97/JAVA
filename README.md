@@ -121,6 +121,41 @@ japanlebron
 /* comment */
 ```
 
+**3. if asterisk is also needed for each line of comment:**
+```
+/**the univerity is not around
+ * 
+ */
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
