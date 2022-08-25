@@ -139,9 +139,9 @@ japanlebron
 
 **2.JRE = JVM + Core Class Library**
 
-#### Variables
-##### Rules about using variables in JAVA: 
-**1.A variable can be defined in different classes**
+### Variables
+#### Rules about using variables in JAVA: 
+**1.Variables can be defined in different classes**
 
 input:
 ```
@@ -168,14 +168,73 @@ output (if run the second one)
 250
 ```
 
+#### How "+" works in program
+**1.When both sides are number(double or integer), then mathematical added up**
 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        System.out.println(70+4);
+    }
+}
+```
+output:
+```
+74
+```
 
+**2.When either of sides is a string, generate string in the end, just put them together** 
 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        System.out.println("100Nick"+4);
+    }
+}
+```
+output:
+```
+100Nick4
+```
 
+#### Sizes of primitive Data/Variables(in byte)
+**1.Metric variables (for integers)**
+```
+int[4]
+short[2]
+long[8]
+```
 
+**2.Metric variables(for decimal)**
+```
+float[4]
+double[8]
+```
 
+**3.Char**
+```
+char[2]：for single char like： 'a'
+boolean[1]：only for true or false
+```
 
+#### Details of integer
+**1."int" is set for integer by default in JAVA, and to claim a long type, we have to add an "l" or "L"**
 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        long a = 114L;             //"L" is optional, but int a= 114L would be wrong.
+        System.out.println(a);
+    }
+}
+```
+output:
+```
+114
+```
 
 
 
