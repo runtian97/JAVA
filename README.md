@@ -303,12 +303,49 @@ a
 9
 ```
 
+**2.Char can participate in operation, each char has its corresponding value in ASCII chart**
 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        char a = 'a';
+        int b = 1;
+        System.out.println(a+b);
+    }
+}
+```
+output:
+```
+98                 //This shows the ASCII value of 'a' is 97
+```
 
+#### Details of Boolean
+**1.Boolean only allows "true" and "false"**
 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        boolean result = true;
+        if(result!=false){      //!= false equivalent to = true
+            System.out.println("congratulations! ");
+        }
+    }
+}
+```
+output:
+```
+congratulations!
+```
 
+#### Automatic data/variable transfer
+**1.Accuracy increases from left to right**
 
-
+char<int<long<float<double
+byte<short<int<long<float<double
+				 
+**2.Backward compatibility**
 
 
 
