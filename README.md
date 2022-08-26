@@ -199,7 +199,7 @@ output:
 100Nick4
 ```
 
-#### Sizes of primitive Data/Variables(in byte)
+#### Sizes of primitive Data/Variables(in byte)(1 byte = 8 bit )
 **1.Metric variables (for integers)**
 ```
 int[4]
@@ -236,11 +236,25 @@ output:
 114
 ```
 
-**2.**
+#### Details of float
+**1."double" is set default by JAVA, and to claim a float, we have to add a "f" or "F"**
 
-
-
-
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        float a = 1.1f;
+        double b = 1.1f;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+output:
+```
+1.1
+1.100000023841858               //double is more accurate that float
+```
 
 
 
