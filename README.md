@@ -401,8 +401,58 @@ output:
 6                      //this 6 is a string, this conversion essentially is from "how '+' works". when a string + a data, the final result is a string
 ```
 
+**2. Use parse to convert a String(except a char)**
 
-				 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        String a= "125";
+                int b = Integer.parseInt(a);
+                double c = Double.parseDouble(a);
+                float d = Float.parseFloat(a);
+                long e = Long.parseLong(a);
+                byte f = Byte.parseByte(a);
+                boolean g = Boolean.parseBoolean(a);
+                short h = Short.parseShort(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println(h);
+        }
+    }
+```
+output:
+```
+125
+125.0
+125.0
+125
+125
+false
+125
+```
+
+**Even in parse, we can still modify the string we're gonna convert**
+
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        String a= "125";
+              double c = Double.parseDouble(a+1);            //the operation in bracket goes first
+              System.out.println(c);
+        }
+    }
+```
+output:
+```
+1251.0
+```
+
 
 
 
