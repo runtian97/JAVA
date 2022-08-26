@@ -305,6 +305,25 @@ a
 
 **2.Char can participate in operation, each char has its corresponding value in ASCII chart**
 
+**operation between char and char**
+
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        char c1 = 'l';
+        char c2 = 'K';
+        System.out.println(c1+c2);
+        }
+    }
+```
+output:
+```
+183
+```
+
+**operation between char and other data/variables**
+
 input:
 ```
 public class class082222 {
@@ -453,7 +472,8 @@ output:
 1251.0
 ```
 
-
+## 08/27/22
+### 
 
 
 
