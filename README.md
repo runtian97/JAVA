@@ -309,7 +309,7 @@ input:
 ```
 public class class082222 {
     public static void main(String[] args){
-        char a = 'a';
+        char a = 'a';                          // char is different from a string
         int b = 1;
         System.out.println(a+b);
     }
@@ -339,15 +339,70 @@ output:
 congratulations!
 ```
 
-#### Automatic data/variable transfer
-**1.Accuracy increases from left to right**
+#### Automatic data/variable conversion
+**1.Accuracy increases from left to right(backward compatibility)**
 
-char<int<long<float<double
-byte<short<int<long<float<double
+**char-int-long-float-double**
+
+
+**byte-short-int-long-float-double**
+
+
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        int a= 'c';                           //this will convert 'c' to the corresponding value in ASCII
+            System.out.println(a);
+        }
+    }
+```
+output:
+```
+99
+```
+
+**2.no automatic conversion between byte, short and char**
+
+**3. Boolean never participates in conversion**
+
+#### Forced data/variable conversion (anti-backward compatbility)
+**1.take the risk of losing accuracy**
+
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        int a = (int)1.9;                         //(int) means force to int
+        System.out.println("a is" +" "+ a);       // in JAVA we use "+" to link, instead of "," in Python
+        }
+    }
+```
+output:
+```
+a is 1
+```
+
+#### Conversion between data/variable and string
+**1.Add "" after the data/variable can make it converted to a String**
+
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        int a = 6;
+        String b = a+"";
+        System.out.println(b);
+        }
+    }
+```
+output:
+```
+6                      //this 6 is a string, this conversion essentially is from "how '+' works". when a string + a data, the final result is a string
+```
+
+
 				 
-**2.Backward compatibility**
-
-
 
 
 
