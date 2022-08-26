@@ -255,12 +255,53 @@ output:
 1.1
 1.100000023841858               //double is more accurate that float
 ```
+**2.directly compare two floats after operation may be risky**
 
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        double b = 8.1/3;
+        double c = 2.7;
+        if(b==c){
+            System.out.println("you are from China");
+        }else
+        {
+            System.out.println(b);
+        }
+    }
+}
+```
+output:
+```
+2.6999999999999997
+```
 
+#### Details of Char
+**1.char can only store one single char**
 
-
-
-
+input:
+```
+public class class082222 {
+    public static void main(String[] args){
+        char a = 'a';
+        char b = '\t';
+        char c = '真';
+        char d = '9';
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+    }
+}
+```
+output:
+```
+a
+	
+真
+9
+```
 
 
 
