@@ -472,8 +472,46 @@ output:
 1251.0
 ```
 
-## 08/28/22
-### 
+## 09/03/22
+### JAVA Operators
+#### "++" in JAVA**
+**1.a++, assign value first then execute operation**
+
+input:
+```
+public class ForExample {
+    public static void main(String[] hell){
+       int a =4;
+       int b =a++;
+       System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+output:
+```
+5
+4
+```
+
+**2.++a, execute operation first then assign value**
+
+input:
+```
+public class ForExample {
+    public static void main(String[] hell){
+       int a =4;
+       int b =++a;
+       System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+output:
+```
+5
+5
+```
 
 
 
