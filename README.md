@@ -609,7 +609,7 @@ output:
 ```
 19
 ```
-**2. In Ternary Operation, pay attention to still pay attention to the difference between a++ and ++a**
+**2. In Ternary Operation, still pay attention to the difference between a++ and ++a**
 
 input:
 ```
@@ -618,8 +618,8 @@ public class ForExample {
         double a=9;
         double b=19;
         double c= a==b?--b:a++;         // in this case, condition should be false, output equal to c=a++ 
-        System.out.println(c);          // Thus, c
-        System.out.print(a);
+        System.out.println(c);          // Thus, c=a++, assign value then ++
+        System.out.print(a);            // print a after ++
     }
 }
 ```
@@ -629,6 +629,27 @@ output:
 10.0
 ```
 
+**3.Use Ternary operation to find the biggest number from three number**
+
+input: 
+```
+public class ForExample {
+    public static void main(String[] hell){
+       int a= 55;
+       int b = 33;
+       int c= 147;
+       int first = a>b?a:b;          //find the bigger one between a and b. 
+       int second =  first>c?first:c;     // after getting the bigger one from a and b, we try to find the biggest one among a, b and c.
+       System.out.print(second);
+    }
+}
+```
+output:
+```
+147
+```
+
+#### Operator Precedence 优先级
 
 
 
