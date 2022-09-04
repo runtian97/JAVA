@@ -513,6 +513,34 @@ output:
 5
 ```
 
+#### Relational operator
+**1.Relational operators work like boolean when printing out**
+
+input:
+```
+public class ForExample {
+    public static void main(String[] hell){
+       int a=8;
+       int b=9;
+       System.out.println(a>b);
+        System.out.println(a==b);
+        System.out.println(a!=b);
+        boolean flag = a>b;       //declare a boolean to help understand
+        System.out.println(flag);  
+    }
+}
+```
+output:
+```
+false
+false
+true
+false
+```
+
+**2.Logic Operators**
+
+
 
 
 
