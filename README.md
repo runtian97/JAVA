@@ -592,6 +592,43 @@ For example:
 a+=b equal to a=a+b 
 ```
 
+#### Ternary Operation (三元运算符)
+**1.condition?operation if true; operation if false;**
+
+input:
+```
+public static void main(String[] hell){
+        int a=9;
+        int b=19;
+        int c=a==b? a+=9: b++;      //ternary operation consists of condition(ends with ?), Operation when true, Operation when false
+        System.out.print(c);
+    }
+}
+```
+output:
+```
+19
+```
+**2. In Ternary Operation, pay attention to still pay attention to the difference between a++ and ++a**
+
+input:
+```
+public class ForExample {
+    public static void main(String[] hell){
+        double a=9;
+        double b=19;
+        double c= a==b?--b:a++;         // in this case, condition should be false, output equal to c=a++ 
+        System.out.println(c);          // Thus, c
+        System.out.print(a);
+    }
+}
+```
+output:
+```
+9.0
+10.0
+```
+
 
 
 
