@@ -539,13 +539,58 @@ false
 ```
 
 #### Logic Operators
-**1. &&: if both true, then true logic operator. If the first one is false, then the second condition won't be tested, higher efficiency**
+**1. &&(与): if both true, then true logic operator. If the first one is false, then the second condition won't be tested, higher efficiency**
+
 **2. &:if both true, then true logic operator. Even if the first one is false, the second condition will still be tested, lower efficiency** 
 
+**3. Most of the time we use "&&"**
 
+**4. ||(或): if the first condition is true, then true. The second addition will not be tested, higher efficiency**
 
+**5. |: Even if the first one is true, the second condition will still be tested, lower efficiency**
 
+**6. Most of the time we use "||"**
 
+#### Inverse Operators:
+**1.!**
+
+input:
+```
+public class ForExample {
+    public static void main(String[] hell){
+      System.out.println(60==50);
+      System.out.println(!(60==50));
+    }
+}
+```
+output:
+```
+false
+true
+```
+
+**2.^: when a and b are different(not both true, not both false), output "true", or we have a "false"**
+
+input:
+```
+public class ForExample {
+    public static void main(String[] hell){
+      System.out.println((10>5)^(5<3));      //Or you can declare a boolean: boolean b = (10>5)^(5<3);
+    }
+}
+```
+output:
+```
+true
+```
+
+#### Assignment Operators
+**1. +=, -=, *=, /=, %=**
+
+For example:
+```
+a+=b equal to a=a+b 
+```
 
 
 
