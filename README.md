@@ -538,8 +538,9 @@ true
 false
 ```
 
-**2.Logic Operators**
-
+#### Logic Operators
+**1. &&: if both true, then true logic operator. If the first one is false, then the second condition won't be tested, higher efficiency**
+**2. &:if both true, then true logic operator. Even if the first one is false, the second condition will still be tested, lower efficiency** 
 
 
 
