@@ -649,9 +649,76 @@ output:
 147
 ```
 
-#### Operator Precedence 优先级
+## 09/05/22
+### Interaction with customers
+#### Scanner
+**1. How to use scanner to interact with customers**
 
+Input:
+```
+import java.util.Scanner;                                                        //introduce Scanner
+public class ForExample {
+    public static void main(String[] hell){
+        Scanner myScanner = new Scanner(System.in);                              //declare a scanner and build it in the system
+        System.out.println("number of floors you want to build for pyramid");    //print indication
+        int number = myScanner.nextInt();                                        //declare variable provided for scanner
+        for(int i=1;i<=number;i++){
+            for (int j=1;j<=number-i;j++){
+                System.out.print(" ");
+            }
+            for (int k=1;k<=2*i-1;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 
+```
+Output:
+```
+number of floors you want to build for pyramid
+7
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+
+```
+
+**2. Another several examples for Scanner**
+
+Input:
+```
+import  java.util.Scanner;                               //really important keep in mind
+public class ForExample {
+    public static void main(String[] hell){              
+        Scanner myScanner = new Scanner(System.in);      //build the value in, also important
+        System.out.println("Name");
+        String name = myScanner.next();                  //for string, directly next()
+        System.out.println("Age");  
+        int age = myScanner.nextInt();                   //for integer, use nextInt(). Similarly, for double, we use nextDouble()
+        System.out.println("Gender");
+        String gender = myScanner.next();
+        if(age>25){
+            System.out.println("you are dead meat");
+        }else System.out.println("I'll let you go");
+    }
+    }
+
+```
+Output:
+```
+Name
+Nick
+Age
+25
+Gender
+male
+I'll let you go
+```
 
 
 
