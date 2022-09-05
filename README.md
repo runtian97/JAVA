@@ -688,7 +688,7 @@ number of floors you want to build for pyramid
 
 ```
 
-**2. Another several examples for Scanner**
+**2. Another example for Scanner**
 
 Input:
 ```
