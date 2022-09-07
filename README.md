@@ -720,7 +720,42 @@ male
 I'll let you go
 ```
 
+## 09/07/22
+### Bitewise Operation
+#### 7 operation symbols:
+**1. &: 同位全为1，结果为1，否则为0**
 
+input:
+```
+class bitewise{
+    public static void main(String[] tired){
+        int a=0B100;
+        int b= 0B0110;
+        System.out.println("results before positional operation:"+a+"\n"+b);
+        System.out.println("Decimal result after operation:"+(a&b));
+        System.out.println("Binary result after operation:"+Integer.toBinaryString(a&b));    //Integer.toBinaryString() is the way to keep binary 
+    }
+}
+```
+output:
+```
+results before positional operation:4
+6
+Decimal result after operation:4
+Binary result after operation:100
+```
+
+**2. |**
+
+**3. ^**
+
+**4. ~**
+
+**5. >>**
+
+**6. <<**
+
+**7.>>>**
 
 
 
