@@ -769,6 +769,15 @@ Binary result after operation:110
 
 **3. ^:异或，同位不同则为1，相同则为0**
 
+input:
+```
+
+```
+output:
+```
+
+```
+
 **4. ~**
 
 **5. >>**
