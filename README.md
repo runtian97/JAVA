@@ -745,9 +745,29 @@ Decimal result after operation:4
 Binary result after operation:100
 ```
 
-**2. |**
+**2. |:同位有一个为1，结果为1**
 
-**3. ^**
+input:
+```
+class bitewise{
+    public static void main(String[] tired){
+        int a=0B100;
+        int b= 0B0110;
+        System.out.println("results before positional operation:"+a+"\n"+b);
+        System.out.println("Decimal result after operation:"+(a|b));
+        System.out.println("Binary result after operation:"+Integer.toBinaryString(a|b));
+    }
+}
+```
+output:
+```
+results before positional operation:4
+6
+Decimal result after operation:6
+Binary result after operation:110
+```
+
+**3. ^:异或，同位不同则为1，相同则为0**
 
 **4. ~**
 
