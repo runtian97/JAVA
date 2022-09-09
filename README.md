@@ -721,7 +721,42 @@ I'll let you go
 ```
 
 ## 09/07/22
-### Bitewise Operation
+### Binary fundamental:
+#### Signed magnitude representation(原码), 1's complement(反码) and two's complement(补码):
+**1.Signed magnitude representation(原码)**
+
+正数三码合一，负数按绝对值转化为binary,最高位补1(这是符号位)
+
+**2.1's complement(反码)**
+
+正数三码合一，负数的反码对该数的原码除了符号位外各位取反
+
+**3.two's complement(补码)**
+
+正数三码合一，负数的补码为反码+1
+
+**4.计算机运算过程中都是用二进制的补码进行操作！！！！！！**
+
+input:
+```
+class bitewise{
+    public static void main(String[] tired){
+        int a=10;
+        System.out.println(Integer.toBinaryString(a));
+        System.out.println(-a);
+        System.out.println(Integer.toBinaryString(-a));
+    }
+}
+```
+output:
+```
+1010
+-10
+11111111111111111111111111110110              //这里输出的是-10的补码
+```
+
+
+### Bitewise Operation(同样的都通过补码来运算)
 #### 7 operation symbols:
 **1. &: 同位全为1，结果为1，否则为0**
 
@@ -771,14 +806,33 @@ Binary result after operation:110
 
 input:
 ```
+class bitewise{
+    public static void main(String[] tired){
+        int a=0B100;
+        int b= 0B110;
+        System.out.println("results before positional operation:"+a+"\n"+b);
+        System.out.println("Decimal result after operation:"+(a^b));
+        System.out.println("Binary result after operation:"+Integer.toBinaryString(a^b));
+    }
+}
+```
+output:
+```
+results before positional operation:4
+6
+Decimal result after operation:2
+Binary result after operation:10
+```
+
+**4. ~:0转为1，1转为0**
+input:
+```
 
 ```
 output:
 ```
 
 ```
-
-**4. ~**
 
 **5. >>**
 
