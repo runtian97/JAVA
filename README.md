@@ -824,22 +824,72 @@ Decimal result after operation:2
 Binary result after operation:10
 ```
 
-**4. ~:0转为1，1转为0**
+**4. ~:0转为1，1转为0(符号位也会转)**
 input:
 ```
-
+class bitewise{
+    public static void main(String[] tired){
+        int a=10;
+        System.out.println(Integer.toBinaryString(a));
+        System.out.println(Integer.toBinaryString(~a));
+    }
+}
 ```
 output:
 ```
-
+1010
+11111111111111111111111111110101        
 ```
 
-**5. >>**
+**5. >>:本质等于除以n个2**
 
-**6. <<**
+input:
+```
+class bitewise{
+    public static void main(String[] tired){
+        int a=7;
+        System.out.println(a>>3); //7/2/2/2=0 (向下取整)
+    }
+}
+```
+output:
+```
+0
+```
 
-**7.>>>**
+**6. <<:本质等于乘以n个2**
 
+input:
+```
+class bitewise{
+    public static void main(String[] tired){
+        int a=7;
+        System.out.println(a<<3); //7*2*2*2=56 (向下取整)
+    }
+}
+```
+output:
+```
+56
+```
+
+**7.>>>:无符号右移，低位溢出，高位补0(用的比较少)**
+
+input:
+```
+class bitewise{
+    public static void main(String[] tired){
+        int a=-128;
+        System.out.println(a>>4);
+        System.out.println(a>>>4);
+    }
+}
+```
+output:
+```
+-8
+268435448
+```
 
 
 
