@@ -735,7 +735,7 @@ I'll let you go
 
 正数三码合一，负数的补码为反码+1
 
-**4.计算机运算过程中都是用二进制的补码进行操作！！！！！！**
+**4.计算机运算过程中都是用二进制的补码进行操作！！！！！！(to unify negative number and positive number)**
 
 input:
 ```
@@ -864,7 +864,7 @@ input:
 class bitewise{
     public static void main(String[] tired){
         int a=7;
-        System.out.println(a<<3); //7*2*2*2=56 (向下取整)
+        System.out.println(a<<3); //7*2*2*2=56 
     }
 }
 ```
@@ -891,14 +891,91 @@ output:
 268435448
 ```
 
+## 09/15/22
+### Control Structure
+#### if-else(curl brackets for if-else should be applied to show clear structure. If there is only one operation commanding, it could be omitted)
+input:
+```
+import java.util.Scanner;
+class stupid{
+    public static void main(String[] args){
+      Scanner input = new Scanner(System.in);
+      System.out.println("input your age");
+      int age = input.nextInt();
+      if(age>=18){
+          System.out.println("You are liable");
+      }
+      else
+      {
+          System.out.println("You are free of being charged");
+      }
+    }
+}
+```
+output:
+```
+input your age
+69
+You are liable
+```
 
+#### if-else if-....-else(else could be non-existed)
+input:
+```
+import java.util.Scanner;
+class stupid{
+    public static void main(String[] args){
+      Scanner input = new Scanner(System.in);
+      System.out.println("input your age");
+      int age = input.nextInt();
+      if(age>=65){
+          System.out.println("You are free");
+      }
+      else if(age<=65&&age>=18)
+      {
+          System.out.println("You are dead meat");
+      }
+      else System.out.println("Anyway, you are so young");
+    }
+}
+```
+output:
+```
+input your age
+4
+Anyway, you are so young
+```
 
-
-
-
-
-
-
+#### nested if-else structure
+input:
+```
+import java.util.Scanner;
+class stupid{
+    public static void main(String[] args){
+      Scanner myScanner = new Scanner (System.in);
+      System.out.println("Contestor's score");
+      Double score = myScanner.nextDouble();
+        if(score>8.0){
+            System.out.println("Contestor's gender");
+            String gender = myScanner.next();
+            if(gender.equals("male")){                    //index.equals("") 用于判断字符串
+                System.out.println("In men group");
+            }else if(gender.equals("female")){
+                System.out.println("In women group");
+            }
+            else System.out.println("please enter male or female");
+        }else System.out.println("you are out");
+    }
+}
+```
+output:
+```
+Contestor's score
+9
+Contestor's gender
+female 
+In women group
+```
 
 
 
