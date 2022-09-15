@@ -976,8 +976,21 @@ Contestor's gender
 female 
 In women group
 ```
+**判断字符串：index.equals("")**
 
-
+input:
+```
+class wonderland{
+    public static void main(String[] argy){
+        boolean c= ("comeon").equals("love");
+        System.out.println(c);
+    }
+}
+```
+output:
+```
+false
+```
 
 
 
