@@ -992,14 +992,105 @@ output:
 false
 ```
 
+**multiple nested structure**
 
+input:
+```
+import  java.util.Scanner;
+class nested{
+    public static void main(String[] never){
+        Scanner myscanner = new Scanner(System.in);              //for each class, Scanner only have to be declared once
+        System.out.println("enter the month");
+        int month = myscanner.nextInt();
+        if(month>=4 && month<=10){
+            System.out.println("enter age");
+            int age = myscanner.nextInt();                       // here, the age is local variable, can be re-declared later. 
+            if(age<18){
+                System.out.println("half price");
+            }
+            else if(age>=18 && age<=60){
+                System.out.println("60");
+            }
+            else if(age>60){
+                System.out.println("1/3");
+            }
+        }else if((month>=1&& month<4) || (month>10 && month<=12 )){
+            System.out.println("age");
+            int age = myscanner.nextInt();                       //here, age is declared again as another local variable
+            if(age>=18 && age<=60){
+                System.out.println("40");
+            }else System.out.println("20");;
+        }
+    }
+}
+```
+output:
+```
+enter the month
+2
+age
+56
+40
+```
 
+#### switch structure
+**1. example to show how switch works**
 
+input:
+```
+import  java.util.Scanner;
+class learntouseswitch{
+    public static void main(String[] no){
+        Scanner lookfor = new Scanner(System.in);
+        System.out.println("enter a char");
+        char c1= lookfor.next().charAt(0);                 //declare the variable which is a char in Scanner
+        switch(c1){                                        //c1 is the one you wanna test with switch
+            case 'a':System.out.println("this is a");      //testd by case, (notice there is ":")
+            break;                                         //break help to jump out of structure when getting desired results
+            case 'b':System.out.println("this is b");
+            break;
+            default:
+                System.out.println("anyway, I got the char");  //default helpes to set default result and break the structure
+        }
+    }
+}
+```
+output:
+```
+enter a char
+a
+this is a
+```
 
+**2. Another example**
 
+input:
+```
+class learntouseswitch{
+    public static void main(String[] no){
+        Scanner lookfor = new Scanner(System.in);
+        System.out.println("enter your name");
+        String name= lookfor.next();
+        switch(name){
+            case "tom":System.out.println("this is a lame name");
+            break;
+            case "jeremy":System.out.println("this is a bastard");
+            break;
+            case "Nick":System.out.println("he is doomed to success");
+                break;
+            default:
+                System.out.println("Anyway, life has to move forward and move on");
+        }
+    }
+}
 
-
-
+```
+output:
+```
+enter your name
+Nick 
+he is doomed to success
+```
 
 
 
