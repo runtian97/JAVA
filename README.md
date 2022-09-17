@@ -1146,6 +1146,52 @@ thursday
 aftermath
 ```
 
+**5.when multiple cases share the same output, we can put those cases toegether and use only one output command line**
+
+input:
+```
+class monthandseason{
+    public static void main(String[] ana){
+       Scanner helpme = new Scanner(System.in);
+       System.out.println("enter month");
+        int month = helpme.nextInt();
+       switch(month){
+           case 1:
+           case 2:
+           case 3:
+               System.out.println("Spring");                   //for case 1-3, they share one command line. it is the same with other groups of cases
+               break;
+           case 4:
+           case 5:
+           case 6:
+               System.out.println("Summer");
+               break;
+           case 7:
+           case 8:
+           case 9:
+               System.out.println("Autumn");
+               break;
+           case 10:
+           case 11:
+           case 12:
+               System.out.println("Winter");
+               break;
+           default: System.out.println("This is not a month number");
+       }
+    }
+}
+```
+output:
+```
+enter month
+5
+Summer
+
+enter month
+4
+Summer
+```
+
 
 
 
