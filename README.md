@@ -1046,7 +1046,9 @@ class learntouseswitch{
         char c1= lookfor.next().charAt(0);                 //declare the variable which is a char in Scanner
         switch(c1){                                        //c1 is the one you wanna test with switch
             case 'a':System.out.println("this is a");      //testd by case, (notice there is ":")
-            break;                                         //break help to jump out of structure when getting desired results
+            break;                                         //break helps to jump out of structure when getting desired results, 
+	                                                     if no break, then another print will be processsed 
+	                                                     each case can have more than one operation, with semi-colon to separate 
             case 'b':System.out.println("this is b");
             break;
             default:
@@ -1091,6 +1093,79 @@ enter your name
 Nick 
 he is doomed to success
 ```
+
+**3.in switch, we can only use (byte, short, int, char, enumerate and string)**
+
+input:
+```
+class whatsup{
+    public static void main(String[] layback){
+        int a = 3;                                        //double is forbidden in switch, int is allowed
+        switch(a){
+            case 1:                                       //case condition should be a constant, can not be a variable 
+	    System.out.println("yes it is what it is");
+            default:                                      // default is also optional
+                System.out.println("not at all");
+        }
+    }
+}
+```
+output:
+```
+not at all
+```
+
+**4.break in switch is important**
+
+input:
+```
+import java.util.Scanner;
+class breakyou{
+    public static void main(String[] args){
+        Scanner iamback = new Scanner(System.in);
+        System.out.println("lets choose a new number");
+        int number=iamback.nextInt();
+        switch(number){
+            case 1:System.out.println("monday");
+            case 2:System.out.println("tuesday");
+            case 3:System.out.println("wednesday");                      // since there is no break, the switch will start from case 3, and print all 
+	                                                                    operations after that. (if we input number 1, then starts from "monday" to
+									    "aftermath") 
+            case 4:System.out.println("thursday");
+            default:System.out.println("aftermath");
+        }
+        }
+}
+```
+output:
+```
+lets choose a new number
+3
+wednesday
+thursday
+aftermath
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
