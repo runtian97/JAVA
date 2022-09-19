@@ -1194,9 +1194,34 @@ Summer
 
 ### Control sturcture------loop control
 #### "for" loop
+**1. for loop logic order**
 
+```
+for(A;B;C){
+D;                        //execuation order: A---B---D---C
+}
+```
 
+**2.variable in for loop is local**
 
+input:
+```
+class local{
+    public static void main(String[] like){
+        int i=1;                                         // here, "i" is declared for the whole class
+        for(;i<=2;i++){
+            System.out.println("this is your destiny");
+        }
+        System.out.println(i);
+    }
+}
+```
+output:
+```
+this is your destiny
+this is your destiny
+3
+```
 
 
 
