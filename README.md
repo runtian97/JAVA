@@ -892,7 +892,7 @@ output:
 ```
 
 ## 09/15/22
-### Control Structure
+### Control Structure------Branch control
 #### if-else(curl brackets for if-else should be applied to show clear structure. If there is only one operation commanding, it could be omitted)
 input:
 ```
@@ -1192,7 +1192,10 @@ enter month
 Summer
 ```
 
- 
+### Control sturcture------loop control
+#### "for" loop
+
+
 
 
 
