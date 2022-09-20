@@ -1223,6 +1223,7 @@ this is your destiny
 3
 ```
 
+**3.in for loop, we can have not only one variable, but they should be same types and separated by comma**
 
 
 
